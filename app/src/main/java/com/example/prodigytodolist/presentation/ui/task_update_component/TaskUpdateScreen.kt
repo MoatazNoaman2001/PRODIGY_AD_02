@@ -109,7 +109,7 @@ fun TaskUpdateScreen(task_id: String? = null, navController: NavController?= nul
                 viewModel?.updateTask(task?.apply {
                     this.label = title.value
                     this.Description = description.value
-                    this.priority = priority
+                    this.priority = selectedOptionText
                 }!!)
 
                 navController?.popBackStack()
